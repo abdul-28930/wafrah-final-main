@@ -39,7 +39,6 @@ const Header: FC = () => {
                   <Link href="/collections/earrings" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-600">Earrings</Link>
                   <Link href="/collections/rings" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-600">Rings</Link>
                   <Link href="/collections/bracelets" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-600">Bracelets</Link>
-                  <Link href="/collections/anklets" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-600">Anklets</Link>
                 </div>
               )}
             </div>
@@ -133,16 +132,6 @@ const Header: FC = () => {
                       }}
                     >
                       Bracelets
-                    </Link>
-                    <Link 
-                      href="/collections/anklets" 
-                      className="block text-gray-700 hover:text-amber-600 py-1"
-                      onClick={() => {
-                        setMobileMenuOpen(false);
-                        setCollectionsOpen(false);
-                      }}
-                    >
-                      Anklets
                     </Link>
                   </div>
                 )}
