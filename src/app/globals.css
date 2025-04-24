@@ -1,0 +1,80 @@
+/* Import Tailwind CSS base styles */
+@import 'tailwindcss/base';
+
+/* Import Tailwind CSS component styles */
+@import 'tailwindcss/components';
+
+/* Import Tailwind CSS utility styles */
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary: #d4af37;
+  --primary-dark: #b8860b;
+  --secondary: #8b4513;
+  --text-color: #333333;
+  --background: #ffffff;
+  --background-alt: #f9f9f9;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--background);
+}
+
+@layer components {
+  /* Custom component classes */
+  .container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .btn-primary {
+    background-color: #d4af37;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  .btn-primary:hover {
+    background-color: #b8860b;
+  }
+
+  .btn-secondary {
+    background-color: white;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  .btn-secondary:hover {
+    background-color: #faf5e6;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
